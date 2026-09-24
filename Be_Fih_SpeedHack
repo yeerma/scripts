@@ -1,0 +1,1 @@
+local P=game:GetService"Players".LocalPlayer;local f;f=function(c)local h=c:WaitForChild"Humanoid";h:GetPropertyChangedSignal"WalkSpeed":Connect(function()h.WalkSpeed=80 end);h.WalkSpeed=80;h.Destroying:Once(function()f(P.Character)end)end;f(P.Character or P.CharacterAdded:Wait())
